@@ -353,7 +353,7 @@ main .our_history p {
   align-items: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 425px) {
   .our_history {
     display: flex;
     flex-flow: column;
