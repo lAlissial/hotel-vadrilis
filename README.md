@@ -1,6 +1,6 @@
 # HOTEL VADRILIS
 
-Olá, Bem-vindo!
+Olá, Bem-vindo(a)!
 
 Este projeto foi realizado por Adriana, Alíssia e Vanessa, estudantes do curso Sistemas para Internet do Instituto Federal da Paraíba (IFPB). É destinado a disciplina de Linguagem de Marcação, cujos professores são Luiz Carlos e Francisco. O projeto se trata da simulação de um site, com tema livre. Nós decidimos simular um site de Hotel. 
 
