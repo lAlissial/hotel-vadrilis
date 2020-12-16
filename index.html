@@ -1,11 +1,516 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vadrilis Hotel</title>
-</head>
-<body>
-    <h1>HOTEL VADRILIS</h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Hotel Vadrilis</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da383dec6a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!---------------------------------------- Navigation Bar ---------------------------------------->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <div class="caixinha">
+            <div class="botaonavbar botao-navbar">
+              <span><i class="fas fa-bars"></i></span>
+            </div>
+          </div>
+      </label>
+      <label class="logo"><i class="fas fa-spa"></i>..HOTEL VADRILIS..<i class="fas fa-spa"></i></label>
+      <ul>
+        <li>
+          <div class="caixinha">
+            <div class="botaonavbar botao-navbar">
+              <span>SOBRE</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="caixinha">
+            <div class="botaonavbar botao-navbar">
+              <span>QUARTOS</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="caixinha">
+            <div class="botaonavbar botao-navbar">
+              <span>SERVIÇOS</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!---------------------------------------- Home ---------------------------------------->  
+    <section>
+      <div class="header">    
+        <div class="nome_hotel">
+          <h1>Hotel Vadrilis</h1>
+        </div>
+        <br>
+        <div class="partecompleta">
+          <form action="/server/reservas_check_disp.php" method="POST">
+            <div class="partedocheck">
+              <label for="date">CHECK-IN</label>
+              <br>
+              <br>
+              <input type="date" name="checkin" id="date">
+            </div>
+            <div class="partedocheck">
+              <label for="date">CHECK-OUT</label>
+              <br>
+              <br>
+              <input type="date" name="checkout" id="date">
+            </div>
+            <div class="partedocheck">
+              <label for="quantity">PESSOAS</label>
+              <br>
+              <br>
+              <input type="number" id="quantity" name="quantity" min="1" max="5">
+            </div>
+            <div class="checando">
+              <input type="submit" value="CHECAR DISPONIBILIDADE">
+            </div>
+          </form>
+        </div> 
+      </div>         
+    </section>
+    <!---------------------------------------- Sobre ---------------------------------------->
+    <main>
+    <section class="our_history">
+      <div class="imghistory">
+        <img src="../img/imghistoryed.jpg">
+      </div>
+      <div class="texthistory">
+        <div class="conheca_nossa">
+          <div id="conheca">
+            <span> 
+              <h1> Conheça Nossa </h1> 
+            </span>
+          </div>
+            <span id="historia"> 
+              <h1> História </h1> 
+            </span>
+        </div>
+          <div id="historia_texo>">
+          <p id="texto-historia"> O Hotel Vadrilis nasceu no ano de 2020, fruto de um sonho em comum entre três amigas universitárias. Durante os 3 anos de sua construção o hotel foi minuciosamente pensado para que nossos clientes pudessem desfrutar das melhores sensações. Imagine o aconchego e a tranquilidade de se hospedar em um dos mais belos cartões-postais de João Pessoa. No Hotel Vadrilis, você encontra tudo o que precisa para uma viagem apaixonante, de frente para o mar e próximo a tudo o que a cidade tem de mais encantador. São 25 confortáveis apartamentos, sendo 2 suites executiva mar, 10 luxo superior e 13 standart, além de serviços como: restaurante, room service de 8h00 às 22h00, loja de conveniência, espaço kids, copa baby, estacionamento, sauna, hidromassagem, piscina e muito mais. Além dos cuidados com a nossa estrutura, informamos que a lei 12.546/2011, que proíbe o fumo em locais fechados, está em vigência para que todos os hóspedes possam aproveitar ainda melhor a sua estadia. Tudo isso, com a dedicação de uma equipe atenciosa, dedicada e sempre à disposição para fazer de cada momento da sua estadia uma lembrança inesquecível.
+          </p>
+          <div class="box-3">
+            <div class="btnsw btn-three">
+              <span>SOBRE NÓS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    <!---------------------------------------- Quartos ---------------------------------------->
+    <span id="titulo_quartos">
+      <h1 id="quartos"> NOSSOS MELHORES QUARTOS </h1>
+    </span>
+    <div class="grid-container">
+      <div class="grid-item-left">
+        <div class="card-img">
+          <div class="img-left-wrapper">
+            <img class="img-left" src="../img/imgs-04.jpg" alt="Quarto 1">    
+          </div>            
+          <div class="img-caption-left">
+            <div class="img-inner">
+              <div>
+                <h2 class= "card-title-text">Quarto Pequeno</h2>
+              </div>
+              <div class="img-info-left">
+                <div><i class="far fa-user-circle fa-lg"><div class="card-info-text card-info-inline">  1 HÓSPEDE</div></i></div>
+                <div><i class="fas fa-home fa-lg"><div class="card-info-text card-info-inline">17 m^2 </div></i></div>                
+              </div>
+              <div class="card-info-text card-info-description">Um quarto pequeno e aconchegante, com 17 metros quadrados. Ideal para quem está viajando sozinho e busca paz e tranquilidade, lazer e diversão.</div>
+              <div>
+                <button class="button">RESERVE AGORA POR R$20</button>
+              </div>
+            </div>            
+          </div>
+        </div>        
+      </div>
+      <div class="grid-item-right">
+        <img class="img-right" src="../img/imgs-02.jpg" alt="Quarto 2">
+        <div class="img-right-caption">
+          <p>QUARTO DE FAMILIA</p>
+          <p class="p-price">POR R$30</p>
+        </div>
+      </div>
+      <div class="grid-item-right">
+        <img class="img-right" src="../img/imgs-01.jpg" alt="Quarto 3">
+        <div class="img-right-caption">
+          <p>QUARTO DE CASAL</p>
+          <p class="p-price">POR R$30</p>
+        </div>
+      </div>
+      <div class="grid-item-right">
+        <img class="img-right" src="../img/imgs-03.jpg" alt="Quarto 4">
+        <div class="img-right-caption">
+          <p>QUARTO DE LUXO</p>
+          <p class="p-price">POR R$110</p>
+        </div>
+      </div>
+      <div class="grid-item-right">
+        <img class="img-right" src="../img/imgs-05.jpg" alt="Quarto 5">
+        <div class="img-right-caption">
+          <p>APARTAMENTO</p>
+          <p class="p-price">POR R$90</p>              
+        </div>
+      </div>
+    </div>
+
+    
+    <!---------------------------------------- pagina 5 (serviços do hotel) ---------------------------------------->
+    <section class="pag_5">
+      <div class="container_5">
+        <section class="hotel-services">
+          <h1 id="servicoshotel">Serviços do Hotel</h1>
+        </section>
+      <div class="servicos_geral">
+        <div class="container_servicos">
+          <div class="servico">
+            <div class="parte_colorida">
+              <span class="first_linha">
+                BÁSICO
+              </span>
+              <span class="preco">
+                R$ 50,00
+              </span>
+              <h3 class="por_dia">
+                POR DIA
+              </h3>
+            </div>
+            <div class="parte_branca">
+              <ul class="lista">
+                <li>
+                  <span class="items-text">
+                    Suíte (um quarto)
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Academia
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Buffet
+                  </span>
+                </li>
+              </ul>
+              <button class="btnpl">
+                <a href="https://https://ifpb.github.io/lm/">LER MAIS</a>
+              </button>
+            </div>
+          </div>
+          <div class="servico">
+            <div class="parte_colorida">
+              <span class="first_linha">
+                PADRÃO
+              </span>
+              <span class="preco">
+                R$ 70,00
+              </span>
+              <h3 class="por_dia">
+                POR DIA
+              </h3>
+            </div>
+            <div class="parte_branca">
+              <ul class="lista">
+                <li>
+                  <span class="items-text">
+                    Suíte (um quarto)
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Academia
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Buffet
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Lavanderia
+                  </span>
+                </li>
+              </ul>
+              <button class="btnpl">
+                <a href="https://https://ifpb.github.io/lm/">LER MAIS</a>
+              </button>                    
+            </div>
+          </div>
+          <div class="servico">
+            <div class="parte_colorida">
+              <span class="first_linha">
+                PREMIUM
+              </span>
+              <span class="preco">
+                R$ 100,00
+              </span>
+              <h3 class="por_dia">
+                POR DIA
+              </h3>
+            </div>
+            <div class="parte_branca">
+              <ul class="lista">
+                <li>
+                  <span class="items-text">
+                    Suíte (dois quartos)
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Academia
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Buffet
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Lavanderia
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Limpeza à seco
+                  </span>
+                </li>
+              </ul>
+              <button class="btnpl">
+                <a href="https://https://ifpb.github.io/lm/">LER MAIS</a>
+              </button>                    
+            </div>
+          </div>
+          <div class="servico">
+            <div class="parte_colorida">
+              <span class="first_linha">
+                TUDO INCLUSO
+              </span>
+              <span class="preco">
+                R$ 150,00
+              </span>
+              <h3 class="por_dia">
+                POR DIA
+              </h3>
+            </div>
+            <div class="parte_branca">
+              <ul class="lista">
+                <li>
+                  <span class="items-text">
+                    Suíte (dois quartos)
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Academia
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Buffet
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Lavanderia
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Limpeza à seco
+                  </span>
+                </li>
+                <li>
+                  <span class="items-text">
+                    Conexão WiFi
+                  </span>
+                </li>
+                </ul>
+                <button class="btnpl">
+                  <a href="https://https://ifpb.github.io/lm/">LER MAIS</a>
+                </button>                    
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!---------------------------------------- Pagina 6 (em torno do hotel) ---------------------------------------->
+    <section class="pag_6">
+      <div class="container_6">
+        <section class="around_the_hotel">
+          <h2>Em torno do Hotel</h2>
+        </section>
+        <div class="centralizacao_3fig">
+          <div class="zoom">
+            <div class="partezinha">
+              <img src="img/img-01.jpg">
+              <div class="text-item">
+                <h2>Louger Bar</h2>
+                <br>
+                <h3>LOREM IPSUM</h3>
+                </div>
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="partezinha">
+              <img src="img/img-02.jpg">
+              <div class="text-item">
+                <h2>Restaurantes</h2>
+                <br>
+                <h3>LOREM IPSUM</h3>
+              </div>
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="partezinha">
+              <img src="img/img-03.jpg">
+              <div class="text-item">
+                <h2>Bem-estar &amp; SPA</h2>
+                <br>
+                <h3>LOREM IPSUM</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------- pagina 7 (comentários dos clientes) ---------------------------------------->
+    <section class="pag_7">
+      <div class="container_7">
+        <section class="clients_say">
+          <h2>Comentários dos nossos clientes fantásticos</h2>
+        </section>
+        <div class="container_clientes">
+          <div class="item_container_clientes">
+            <div class="parte_texto">
+              <div class="user_text">
+                <img src="img/pht_1.jpg">
+                <p>
+                  <em>"Todas as cozinhas do Hotel Vadrilis estão equipadas com fogão, micro-ondas e geladeira. Além disso, o hotel fornece aos visitantes lavanderia, centros de passar roupa e roupas de cama de qualidade com almofadas extras em todas as áreas."</em>
+                </p>
+              </div>
+              <div class="user_name">
+                Mikael
+              </div>
+              <div class="user_desk">
+                VIAJANTE
+              </div>
+            </div>
+          </div>
+          <div class="item_container_clientes">
+            <div class="parte_texto2">
+              <div class="user_text">
+              <img src="img/pht_2.jpg">
+              <br>
+                <p>
+                  <em>"                   O hotel possui estacionamento gratuito! Por um custo, os hóspedes podem solicitar uma solução de estocagem de mercearia para cozinha ou distribuição de mercearia. Serviços de lavagem a seco também estão disponíveis."</em>
+                </p>
+              </div>
+              <div class="user_name">
+                Estela
+              </div>
+              <div class="user_desk">
+                VIAJANTE
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!---------------------------------------- Pagina 8 (mapa) ---------------------------------------->
+    <section class="pag_8">
+      <div class="findushere">
+        <p>Encontre-nos aqui</p>
+      </div>
+      <div class="mapaa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.4582707790096!2d-34.87499884397443!3d-7.135649594847398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB!5e0!3m2!1sen!2sbr!4v1521749915692" 
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>   
+  </body>
+  <!---------------------------------------- Footer ---------------------------------------->
+  <footer>
+      <section class="footer-content">
+        <section class="address">
+          <h2>Suporte por telefone</h2>
+          <p>24 HORAS POR DIA</p>
+          <br>
+          <h3>+ 01 234 567 890</h3>
+        </section>
+        <section class="social">
+          <h2>Siga-nos</h2>
+          <p>CANAIS DE MÍDIA SOCIAL<p>
+          <br>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </section>
+        <section class="sugestoes">
+          <h1>Comentários</h1>
+          <form action="/server/sugestoes_receber_ofertas.php" method="POST">
+            <div class="form-group message"> 
+              <label for="message">DEIXE AQUI SUA CRÍTICA, SUGESTÕES OU ELOGIOS!</label>
+              <br>
+              <br>
+              <textarea id="message" name="message" rows="2" cols="27"></textarea>
+            </div>
+          </form>
+        </section>
+        <section class="about">
+          <h1>Hotel Vadrilis</h1>
+          <form action="/server/sugestoes_receber_ofertas.php" method="POST">
+            <div>
+              <label for="email">INSCREVA-SE PARA OFERTAS ESPECIAIS</label>
+              <br>
+              <br>
+              <input type="email" name="email" id="email" placeholder="E-mail">
+              <br>
+              <br>
+              <input type="submit" value="ENVIAR">
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="copyright">
+        <span> © Copyright 2020 - Todos os direitos reservados</span>
+      </section>
+    </footer>
 </html>
