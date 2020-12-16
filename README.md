@@ -16,6 +16,7 @@ O Hotel Vadrilis contém como plano de fundo algumas imagens das áreas comuns d
   
   Vanessa Vieira Borges | vanessa.vieira@academico.ifpb.edu.br
 
+
 Link do Site: 
 
 https://lalissial.github.io/hotel-vadrilis/
