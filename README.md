@@ -5,7 +5,9 @@ O Este projeto foi realizado por Adriana, Alíssia e Vanessa, estudantes do curs
 • Contato da equipe:
 
   Adriana Albuquerque de Moura --> adriana.albuquerque@academico.ifpb.edu.br
+  
   Alíssia Deolinda Oliveira de Lima --> alissia.lima@academico.ifpb.edu.br
+  
   Vanessa Vieira Borges --> vanessa.vieira@academico.ifpb.edu.br
 
 Link para o site: https://lalissial.github.io/hotel-vadrilis/
